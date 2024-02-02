@@ -83,7 +83,7 @@ pub fn weird(fn first, fn second) i32
 loop (is_night) {}
 
 // for-loop alternative
-loop (val, idx: arr, 0..) {}
+loop (i32 val, i32 idx: arr, 0..) {}
 
 // infinite loop
 loop {}
