@@ -2,7 +2,6 @@
 
 Insipiring humanity with simple, explicit and readable code!
 
----
 # Features
 
 - Interoperability: **C** language (_full_);
@@ -12,7 +11,6 @@ Insipiring humanity with simple, explicit and readable code!
 - Module system: **first-class**;
 - X;
 
----
 # Example
 
 ### Variables and pointers
