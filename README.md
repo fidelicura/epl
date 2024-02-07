@@ -8,7 +8,7 @@ Insipiring humanity with simple, explicit and readable code!
 - Type system: **strong**, **static**, **structural-algebraic**, **manifest**;
 - Metaprogramming: **reflective** (_via compile-time metadata_);
 - Memory: **explicit allocators**, **immutability by default**;
-- Module system: **first-class**;
+- Namespace: **first-class modules**;
 - X;
 
 # Example
