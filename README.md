@@ -5,11 +5,12 @@ Insipiring humanity with simple, explicit and readable code!
 # Features
 
 - Interoperability: **C** language (_full_);
-- Type system: **strong**, **static**, **structural-algebraic**, **manifest**;
-- Metaprogramming: **reflective** (_via compile-time metadata_);
+- Types: **strong**, **static**, **structural-algebraic**, **manifest**;
+- Metaprogramming: **reflective** (_via compile-time metadata_), **CTFE** with **type of all types**;
 - Memory: **explicit allocators**, **immutability by default**;
-- Namespace: **first-class modules**;
-- X;
+- Namespace: **first-class modules** (_compile-time_);
+- Design: **data-oriented**;
+- Runtime: **no**;
 
 # Example
 
@@ -31,7 +32,7 @@ mut i32 another_variable;
 // match clause
 match (variable) {
     variant_1: expr,
-    // recall mechanism (switch motions)
+    // recall mechanism (switch like motion)
     variant_2: {
         expr;
         recall;
@@ -41,7 +42,7 @@ match (variable) {
 // if-else alternative in match
 match (is_color) {
     print("Colored!");
-} else match (is_enough_light) {
+} else (is_enough_light) {
     print("Not enough light to determine color!");
 } else {
     print("Not colored!");
@@ -149,3 +150,8 @@ pub attr inline {}
 
 ```rust
 ```
+
+# Additionals
+
+- First compiler written in OCaml;
+- Compiler bootstrapping is one of the goals;
