@@ -18,11 +18,11 @@ Insipiring humanity with simple, explicit and readable code!
 
 ```rust
 // immutable and mutable variables
-let some_variable: u8;
+const some_variable: u8;
 mut another_variable: u32;
 
 // sized and unsized arrays
-let some_sized_arr: [f32; 12];
+const some_sized_arr: [f32; 12];
 mut some_unsized_arr: [i16];
 ```
 
@@ -98,7 +98,7 @@ loop {}
 // structs with persistent fields
 // and implemented methods
 struct Point {
-    let x: i32;
+    const x: i32;
     var y: i32;
 
     persistent {
@@ -117,7 +117,7 @@ union Value {
 
     var float: f32;
     var integer: i32;
-    let byte: u8;
+    const byte: u8;
 
     // WIP: parametric polymorphism generics bound auto inference
     // compiler will automagically infer bounds
