@@ -1,6 +1,6 @@
 # Description
 
-Insipiring humanity with simple, explicit and readable code!
+Insipiring humanity with expressive, explicit and readable code!
 
 # Features
 
