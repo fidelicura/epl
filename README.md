@@ -11,6 +11,7 @@ Insipiring humanity with expressive, explicit and readable code!
 - Namespace: **first-class modules** (_compile-time_);
 - Design: **data-oriented**;
 - Runtime: **no**;
+- Modes: **debug** (_blazing fast compile-time_), **release** (_huge performance boost_);
 
 # Example
 
