@@ -10,8 +10,8 @@ Insipiring humanity with expressive, explicit and readable code!
 - Memory: **explicit allocators**, **immutability by default**;
 - Namespace: **first-class modules** (_compile-time_);
 - Design: **data-oriented**;
-- Runtime: **no**;
 - Modes: **debug** (_blazing fast compile-time_), **release** (_huge performance boost_);
+- Runtime: **no**;
 
 # Example
 
@@ -60,14 +60,14 @@ pub fn sum(first: *i32, second: i32) i32 {
 }
 
 @no_checks+no_mangle+linux
-// fn add(mut* mut i32 first, i32 second) ErrorName:void {
-fn add(first: mut*i32, second: i32) ErrorName:void {
+fn add(mut first: *i32, second: i32) ErrorName:void {
     // "black box" clause
     // basically saying to the compiler "don't optimize this"
     persistent {
         // will increase pointer destination address, not a value after the ptr
         first += second;
     }
+    persistent first += second; // alternate way
 }
 
 @windows
@@ -87,7 +87,7 @@ pub fn weird(first: fn, second: fn) i32 // named anonymous functions
 loop (is_night) {}
 
 // for-loop alternative (auto array indexing by ctx)
-loop (|val: i32, idx: u8| arr, 0..) {}
+loop (arr, 0..) (val, idx) {}
 
 // infinite loop
 loop {}
@@ -103,7 +103,7 @@ struct Point {
     var y: i32;
 
     persistent {
-        mut amount: i32 = 0,
+        mut amount: i32 = 0;
     }
 
     pub fn new(x: i32, y: i32) Self {
