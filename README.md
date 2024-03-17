@@ -1,7 +1,7 @@
 # Description
 
 Insipiring humanity with expressive, explicit and readable code!
-Language is considered as "systems programming language". There are no strings, no `void` (it is `any` now).
+Language is considered as "systems programming language". There are no strings, no `void`.
 You have common things to represent memory passing in and out, like in real systems program, so nothing fancy.
 
 # Features
@@ -16,6 +16,8 @@ You have common things to represent memory passing in and out, like in real syst
 - Runtime: **no**;
 
 # Example
+
+>There is no `void` as said earlier, so there is no `void *`, but there is `uma` (unspecified memory address) that may serve as `void *`.
 
 ### Variables and pointers
 
