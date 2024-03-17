@@ -1,6 +1,8 @@
 # Description
 
 Insipiring humanity with expressive, explicit and readable code!
+Language is considered as "systems programming language". There are no strings, no `void`.
+You have common things to represent memory passing in and out, like in real systems program, so nothing fancy.
 
 # Features
 
